@@ -4,7 +4,7 @@ pipeline {
         stage('download from github') {
             steps {
                 echo "Starting to download on linux agent"
-                git branch: 'main', url: 'https://github.com/rubabe/Jenkins_Samples.git'
+                git branch: 'main', url: 'https://github.com/rubabe/jenkins.git'
                 sh '''
                 echo 'downloaded'
                 echo 'running multiline shell command in jenkins'
