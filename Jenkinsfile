@@ -27,7 +27,7 @@ pipeline {
             steps {
                 echo "pushing image"
                 sh 'docker login -u Rubabe -p Elnureko83.'
-                sh 'docker push Rubabe/jenkins_sample:1.0'
+                sh 'docker push rubabe/jenkins_sample:1.0'
                 sh 'echo pushing to docker registry finished successfully'
                 sh 'sleep 30'
                 sh '''
